@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap  -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <table class="table table-hover">
+        <tbody>
+          <tr>
+            <th scope="row">6:00</th>
+            <td><div class="input-group">
+              <textarea class="form-control" data-time="6" aria-label="With textarea"></textarea>
+            </div></td>
+            <td><button type="button" data-time="6" class="btn btn-dark"><i class="fas fa-save fa-3x"></i></button></td>
+          </tr>
+          <tr>
+            <th scope="row">7:00</th>
+            <td><div class="input-group">
+              <textarea class="form-control" data-time="7" aria-label="With textarea"></textarea>
+            </div></td>
+            <td><button type="button" data-time="7" class="btn btn-dark"><i class="fas fa-save fa-3x"></i></button></button></td>
+          </tr>
+          <tr>
+            <th scope="row">8:00</th>
+            <td><div class="input-group">
+              <textarea class="form-control" data-time="8" aria-label="With textarea"></textarea>
+            </div></td>
+            <!-- to merge cells -->
+            <!-- <td colspan="2">Larry the Bird</td> -->
+            <td><button type="button" data-time="8" class="btn btn-dark"><i class="fas fa-save fa-3x"></i></button></button></td>
+          </tr>
+          <tr>
+            <th scope="row">9:00</th>
+            <td><div class="input-group">
+              <textarea class="form-control" data-time="9" aria-label="With textarea"></textarea>
+            </div></td>
+            <td><button type="button" data-time="9" class="btn btn-dark"><i class="fas fa-save fa-3x"></i></button></button></td>
+          </tr>
+          <tr>
+            <th scope="row">10:00</th>
+            <td><div class="input-group">
+              <textarea class="form-control" data-time="10" aria-label="With textarea"></textarea>
+            </div></td>
+            <td><button type="button" data-time="10" class="btn btn-dark"><i class="fas fa-save fa-3x"></i></button></button></td>
+          </tr>
+          <tr>
+            <th scope="row">11:00</th>
+            <td><div class="input-group">
+              <textarea class="form-control" data-time="11" aria-label="With textarea"></textarea>
+            </div></td>
+            <td><button type="button" data-time="11" class="btn btn-dark"><i class="fas fa-save fa-3x"></i></button></button></td>
+          </tr>
+          <tr>
+            <th scope="row">12:00</th>
+            <td><div class="input-group">
+              <textarea class="form-control" data-time="12" aria-label="With textarea"></textarea>
+            </div></td>
+            <td><button type="button" data-time="12" class="btn btn-dark"><i class="fas fa-save fa-3x"></i></button></button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
