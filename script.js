@@ -12,32 +12,32 @@ savedTask();
 
 //bugged why 6 - 10 is less than 21?
 
-// setInterval(function(){
-//     for (let i = 0; i < eachRow.length; i++) {
-//         let thisRow = eachRow[i]
-//         let thisHour = thisRow.dataset.time;
-        
-          
-//         if (currentTime > thisHour) {
-//             console.log(thisHour);
-//             console.log(currentTime);
-//             console.log("is bigger");
+setInterval(function(){
+    for (let i = 0; i < eachRow.length; i++) {
+        let thisRow = eachRow[i]
+        let thisHour = thisRow.dataset.time;
+                 
+          if (~~currentTime > ~~thisHour) {
+            console.log(thisHour);
+            console.log(currentTime);
+            $(`textarea[data-time~=${~~thisHour}]`).css("background-color", "lightpink")
+            console.log("is bigger");
             
-//           } else if (currentTime < thisHour) {
-//             console.log(thisHour);
-//             console.log(currentTime);
-//             console.log("is less");
-//           } else {
-//             console.log(thisHour);
-//             console.log(currentTime);            
-//             console.log("is bang");
-//           }
+          } else if (~~currentTime < ~~thisHour) {
+            console.log(thisHour);
+            console.log(currentTime);
+            $(`textarea[data-time~=${~~thisHour}]`).css("background-color", "lightgreen")
+            console.log("is less");
+          } else {
+            $(`textarea[data-time~=${~~thisHour}]`).css("background-color", "lightyellow")
+            console.log("is bang");
+          }
        
         
-//     }      
+    }      
         
     
-// },1000)
+},1000)
 
 function savedTask() {
     for (let index = 0; index < eachRow.length; index++) {
