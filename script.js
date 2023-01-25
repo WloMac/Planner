@@ -6,8 +6,6 @@ let eachRow = $("textarea");
 
 $("#currentDay").text(todayDate);
 
-// $(`textarea[data-time~=${test}]`).css("background-color", "green") // Working
-
 savedTask();
 
 setInterval(function(){
@@ -45,13 +43,6 @@ function savedTask() {
         
     }
 }
-
-
-// if currentTime is != ( forward) then paint background grey other green
-//.split 
-// add set interval to check real life time
-
-
 
 $(".btn").on("click", function (event) {
 
