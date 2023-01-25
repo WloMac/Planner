@@ -10,8 +10,6 @@ $("#currentDay").text(todayDate);
 
 savedTask();
 
-//bugged why 6 - 10 is less than 21?
-
 setInterval(function(){
     for (let i = 0; i < eachRow.length; i++) {
         let thisRow = eachRow[i]
